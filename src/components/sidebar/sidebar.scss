@@ -1,0 +1,94 @@
+.sidebar{
+   border-right: 0.5px solid lightgray;
+   height: 100vh;
+   
+    flex: 1;
+    .top{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .logo{
+            font-size: 20px;
+            font-weight: bolder;
+            color: plum;
+        }
+    }
+    hr{
+        height: 0;
+        border: 0.5px solid lightgray;
+        opacity: .7;
+    }
+
+    .center{
+        padding-left: 10px;
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            .title{
+                font-size: 10px;
+                font-weight: bold;
+                color: gray;
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+
+            li{
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: #ddd9f0;
+                }
+
+                .icon{
+                    font-size: 18px;
+                    color: #7464bb;
+                }
+
+                span{
+                    font-size: 13px;
+                    font-weight: 600;
+                    color: grey;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .bottom{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        .colorOption{
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            border: 1px solid #7464bb;
+            cursor: pointer;
+            margin: 5px;
+            &:nth-child(1){
+                background-color: whitesmoke;
+            }
+            &:nth-child(2){
+                background-color: #333;
+            }
+            &:nth-child(3){
+                background-color: darkblue;
+            }
+        }
+        
+    }
+    @media (max-width: 800px) {
+        .logo,
+        .center ul .title,
+        .center ul li span {
+          display: none;
+        }
+        .bottom{
+            flex-direction: column;
+        }
+    }
+}

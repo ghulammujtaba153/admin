@@ -1,0 +1,31 @@
+.home{
+    display: flex;
+    
+    .homeContainer{
+        
+        flex: 6;
+        .widgets, .charts{
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .charts{
+            padding: 5px 20px;
+        }
+
+        @media (max-width: 1100px) {
+             .charts{
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .widgets{
+                flex-direction: column;
+            }
+        }
+    }
+}
+

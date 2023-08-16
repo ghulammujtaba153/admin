@@ -1,0 +1,74 @@
+.container{
+    width: 400px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2%;
+    box-shadow: 1px 1px 5px 7px rgba(0,0,0,0.05);
+    -webkit-box-shadow: 1px 1px 5px 7px rgba(0,0,0,0.05);
+    -moz-box-shadow: 1px 1px 5px 7px rgba(0,0,0,0.05);
+    .Top{
+        margin-top: 10px;
+        
+    }
+    .heading{
+        font: bolder;
+        font-weight: 900;
+        padding: 10px;
+
+    }
+    .product{
+        padding: 10px;
+    }
+    .bottom{
+        margin: 10% 0;
+    }
+}
+
+.buttonContainer{
+    width: 100px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+
+    .button{
+        margin-top: 5%;
+        background-color: green;
+        color: white;
+        padding: 0% 100%;
+        &:hover{
+            background-color: rgb(122, 219, 57);
+        }
+    }
+    .pdf-button{
+        margin-top: 5%;
+        margin-left: 5%;
+        background-color: rgb(197, 128, 214);
+        padding: 0% 100%;
+        color: white;
+        &:hover{
+            background-color: rgb(143, 57, 219);
+        }
+    }
+    
+}
+
+.productConatiner{
+    display: flex;
+    padding: 20px 0px;
+    justify-content: space-between;
+    border-bottom: 1px solid gainsboro;
+    
+    align-items: center;
+
+    img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .stats{
+        display: flex;
+        flex-direction: column;
+    }
+}
